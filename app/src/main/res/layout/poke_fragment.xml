@@ -10,18 +10,32 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="222dp"
-        android:layout_height="102dp"
+        android:layout_width="275dp"
+        android:layout_height="169dp"
         android:fontFamily="@font/louis"
-        android:text="Disfruta de lo que mas te gusta"
+        android:text="Ver y disfrutar Películas y Series en Latino,
+                    Español, Subtitulado e ingles, los últimos estrenos en la mejor calidad HD sin cortes."
         android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.399" />
+        app:layout_constraintVertical_bias="0.277" />
+
+    <TextView
+        android:layout_width="192dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/louis"
+        android:text="Ricon del cinefilo"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
 
     <Button
         android:id="@+id/next_button"

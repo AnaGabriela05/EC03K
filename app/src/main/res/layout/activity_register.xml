@@ -7,56 +7,41 @@
     android:background="@drawable/fondo"
     tools:context=".Register">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/cancel_button"
-        android:layout_width="129dp"
-        android:layout_height="47dp"
-        android:background="@drawable/custom_buttom_register"
-        android:text="Register"
-        android:textColor="@color/black"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.959"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/next_button"
-        android:layout_width="129dp"
-        android:layout_height="47dp"
-        android:background="@drawable/custom_buttom_register"
-        android:text="Register"
-        android:textColor="@color/black"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.959"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
-
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="366dp"
-        android:layout_height="439dp"
+        android:layout_width="351dp"
+        android:layout_height="627dp"
         android:background="@drawable/custom_login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667">
+        app:layout_constraintVertical_bias="0.634">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageprofile"
+                android:layout_width="161dp"
+                android:layout_height="151dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/register" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnImagen"
+                android:layout_width="158dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_buttom"
+                android:text="Agregar Imagen"
+                app:backgroundTint="@null" />
+
             <!-- Campos del formulario -->
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/nombre_text_input"
@@ -144,59 +129,30 @@
                     android:maxLines="1" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/num_telf_text_input"
-                style="@style/Widget.EC03.TextInputLayout"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:hint="N° Celular / Telefonico"
-                app:endIconMode="clear_text">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/num_telf_edit_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:maxLines="1" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-        </LinearLayout>
-    </ScrollView>
-
-    <ScrollView
-        android:layout_width="323dp"
-        android:layout_height="164dp"
-        android:background="@drawable/custom_login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028">
-
-        <LinearLayout
-            android:id="@+id/layoutSection1"
-            android:layout_width="match_parent"
-            android:layout_height="0dp">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/image"
-                android:layout_width="161dp"
-                android:layout_height="151dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/register"
-                app:civ_border_color="#DEB464" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancel_button"
+                android:layout_width="129dp"
+                android:layout_height="47dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/custom_buttom_register"
+                android:text="Cancelar"
+                android:textColor="@color/black"
+                app:backgroundTint="@null" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnImagen"
-                android:layout_width="115dp"
-                android:layout_height="71dp"
-                android:layout_gravity="center"
-                android:background="@drawable/custom_buttom"
-                android:text="Agregar Imagen"
+                android:id="@+id/regis_button"
+                android:layout_width="129dp"
+                android:layout_height="47dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="-47dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/custom_buttom_register"
+                android:text="Register"
+                android:textColor="@color/black"
                 app:backgroundTint="@null" />
+
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

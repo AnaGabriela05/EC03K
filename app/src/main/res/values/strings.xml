@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">EC03K</string>
+    <string name="app_name">¡Busca la raza de perros que te gustan!</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

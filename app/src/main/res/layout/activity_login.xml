@@ -95,7 +95,7 @@
                 android:layout_marginTop="15dp">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/next_button"
+                    android:id="@+id/login_button"
                     android:layout_width="183dp"
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
